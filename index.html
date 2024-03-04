@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoloCake</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="bg-deal">
+<nav class="nav-g navbar navbar-expand-lg navbar-dark ">
+  <div class="container nav-g">
+    <a class="navbar-brand nav-g" href="#">Lolo </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about-us">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-us">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Jumbotron -->
+<div class="hello jumbotron-fluid">
+  <div class="container jumbo-text mt-10  ">
+    <h1 class="display-4">Delicious Cakes for Every Occasion</h1>
+    <p class="lead">Order now and indulge in our mouth-watering cakes!</p>
+    <a class="btn bg-warning btn-lg" href="#" role="button">Order Now</a>
+  </div>
+</div>
+</div>
+
+<!-- Features Section -->
+<div class="container features">
+  <div class="row">
+    <div class="col-lg-4 col-md-6">
+      <div class="feature-item">
+        <h2>Custom Cakes</h2>
+        <p>Our talented bakers can create custom cakes for birthdays, weddings, and more.</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="feature-item">
+        <h2>Delivery</h2>
+        <p>Enjoy the convenience of doorstep delivery for all your cake orders.</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 ">
+      <div class="feature-item ">
+        <h2>Quality-Ingredients</h2>
+        <p>We use only the finest ingredients to ensure delicious and fresh cakes.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Call to Action Section -->
+<section class="cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>Place Your Order Today!</h2>
+        <p class="lead">Discover the joy of our delectable cakes. Order now and treat yourself!</p>
+        <a class="btn bg-warning btn-lg" href="#" role="button">Order Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cake Types Section -->
+<section class="cake-types" id="gallery">
+  <div class="container">
+    <h2 class="text-center">Gallery</h2>
+    <div class="row ">
+      <div class="col-lg-4 col-md-6 gap">
+        <div class="card">
+          <img src="./assets/chocolate.jpg" class="card-img-top" alt="Chocolate Cake">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Cake</h5>
+            <p class="card-text">Indulge in the rich and decadent flavor of our chocolate cake.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <img src="./assets/valilla.jpg" class="card-img-top" alt="Vanilla Cake">
+          <div class="card-body">
+            <h5 class="card-title">Vanilla Cake</h5>
+            <p class="card-text">Enjoy the classic and delightful taste of our vanilla cake.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mx-auto">
+        <div class="card">
+          <img src="./assets/hero.jpg" class="card-img-top" alt="Red Velvet Cake">
+          <div class="card-body">
+            <h5 class="card-title">Red Velvet Cake</h5>
+            <p class="card-text">Experience the luxurious and velvety texture of our red velvet cake.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us Section -->
+<section class="about-us" id="about-us">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-6 mx-auto">
+        <h2>About Us</h2>
+        <p>We are passionate about creating delicious cakes that bring joy to every occasion. With our commitment to quality ingredients and attention to detail, we ensure that every cake we bake is a masterpiece. From custom designs to classic favorites, we have something for everyone. Order now and experience the magic of our cakes!</p>
+      </div>
+      <div class="col-lg-6 mx-auto text-center">
+        <img src="./assets/about2.jpg" alt="About Us Image" width="400px" height="300px">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Us Section -->
+
+<section class="contact-us contact-real id="contact-us">
+  <div class="contact-form">
+    <h1 class="text-center mb-4">Contact Us</h1>
+        <p class="co-text">For inquiries and orders, please contact us using the form below.</p>
+
+    <form id="contact-form" method="post" action="#" novalidate>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-warning btn-block">Submit</button>
+    </form>
+  </div>
+  </section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+  <p>&copy; 2024 Ann. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  // JavaScript for form validation
+  (function () {
+    'use strict';
+    window.addEventListener('load', function () {
+      var forms = document.getElementsByClassName('needs-validation');
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>
+
+</body>
+</html>

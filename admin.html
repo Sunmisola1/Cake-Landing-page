@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    .sidebar {
+      background-color: #f8f9fa;
+      border-right: 1px solid #dee2e6;
+    }
+    .list-group-item {
+      border-color: transparent;
+    }
+    .list-group-item.active {
+      background-color: #343a40;
+      border-color: #343a40;
+    }
+    .list-group-item.active:hover {
+      background-color: #343a40;
+    }
+    .main-content {
+      background-color: #ffffff;
+      border-left: 1px solid #dee2e6;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    .content-title {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .card {
+      border: none;
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    }
+    .table-wrapper {
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Admin Dashboard</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" data-section="orders">Orders</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-section="products">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-section="customers">Customers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container-fluid mt-3 mt-lg-5">
+  <div class="row">
+    <div class="col-md-3 sidebar">
+      <!-- Sidebar -->
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" data-section="orders">Dashboard</a>
+        <a href="#" class="list-group-item list-group-item-action" data-section="orders">Orders</a>
+        <a href="#" class="list-group-item list-group-item-action" data-section="products">Products</a>
+        <a href="#" class="list-group-item list-group-item-action" data-section="customers">Customers</a>
+      </div>
+    </div>
+    <div class="col-md-9 main-content">
+      <!-- Page Content -->
+      <div id="orders" class="section">
+        <h2 class="content-title">Orders</h2>
+        <div class="table-wrapper">
+          <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>Order ID</th>
+                <th>Customer Name</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>Chocolate Cake</td>
+                <td>2</td>
+                <td>Processing</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>Vanilla Cake</td>
+                <td>1</td>
+                <td>Delivered</td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="products" class="section" style="display: none;">
+        <h2 class="content-title">Products</h2>
+        <div class="table-wrapper">
+          <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Availability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Chocolate Cake</td>
+                <td>$20</td>
+                <td>In Stock</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Vanilla Cake</td>
+                <td>$18</td>
+                <td>In Stock</td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="customers" class="section" style="display: none;">
+        <h2 class="content-title">Customers</h2>
+        <div class="table-wrapper">
+          <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>Customer ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+                <td>123-456-7890</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>jane@example.com</td>
+                <td>456-789-0123</td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Custom JS -->
+<script>
+  $(document).ready(function() {
+    // Show the selected section and hide others
+    $('.list-group-item').click(function() {
+      var section = $(this).data('section');
+      $('.section').hide();
+      $('#' + section).show();
+    });
+  });
+</script>
+
+</body>
+</html>

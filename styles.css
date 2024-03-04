@@ -1,0 +1,268 @@
+    body {
+        
+        background-color: #f8f9fa;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .bg-deal{
+        background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.808)),
+        url( '/assets/chocolate.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        height:90vh;
+        overflow: hidden !important;
+    }
+    .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color:  #ffc107 !important;
+    }
+    .nav-link {
+        color: #ffffff !important;
+        font-size: 20px;
+    }
+    .nav-link:hover{
+        color:  #ffc107 !important;
+    }
+    
+    .hello {
+           color: white;
+        text-align: center;
+        padding: 100px 20px;
+        border-radius: 0;
+       
+    }
+    
+    .jumbo-text{
+        color: #fff;
+    display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin-top:50px;
+
+    }
+    .jumbotron h1 {
+        font-weight: bolder;
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+    }
+    .jumbotron p {
+        font-size: 1.5rem;
+    } 
+    .btn-primary{
+        background-color: #FCDC2A !important;
+        border-color: #FCDC2A !important;
+        color: #c70e0e !important;
+        font-weight: bolder;
+        transition: all 0.3s ease;
+ 
+    }
+    .btn-primary:hover {
+        background-color: #ffca3a;
+        border-color: #ffca3a;
+    }
+    .features {
+        padding: 50px 0;
+        overflow: hidden !important;
+    }
+    .feature-item {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+    .feature-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+    }
+    .feature-item h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    .feature-item p {
+        font-size: 0.8rem;
+    }
+    .cta {
+        background-color: #114232;
+        padding: 100px 0;
+        text-align: center;
+        color: #fff;
+        overflow: hidden !important;
+    }
+    .cta h2 {
+        font-weight: bold;
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    .cta p {
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+    }
+    .cake-types {
+        padding: 50px 0;
+        overflow: hidden !important;
+    }
+    .cake-types h2 {
+        font-size: 3rem;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .card {
+        border: none;
+        transition: all 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    }
+    .about-us {
+        background-color: #ffffff;
+        padding: 100px 0;
+        overflow: hidden !important;
+    }
+    .about-us img {
+        max-width: 100%;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    .about-us h2 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .about-us p {
+        font-size: 1.25rem;
+        text-align: justify;
+    }
+    .contact-real{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        margin-top:2%;
+       padding: 10px;
+        background-image: url('./assets/cotatc.jpg');
+        background-size: contain;     
+               background-repeat: no-repeat;   
+        overflow: hidden !important;
+    }
+    .contact-form {
+        max-width: 400px;
+        width: 250%;
+        margin-left: 50%;
+        margin-bottom: 2.5%;
+        animation: fadeIn 1s ease;
+      }
+      .co-text{
+        font-size: 14px !important;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    .form-group label {
+        font-weight: bold;
+    }
+    .form-control {
+        border-radius: 20px;
+        padding: 16px;
+       width: 400px !important;
+    }
+    .form-control:focus {
+        border-color: #ffc107;
+        box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+    }
+    .btn-primary {
+        border-radius: 20px;
+        padding: 15px 40px;
+        font-weight: bold;
+        letter-spacing: 1px;
+       
+        
+    }
+    .btn-primary:hover {
+        background-color: #ffca3a;
+        border-color: #ffca3a;
+    }
+    .error-message {
+        color: red;
+        font-size: 0.9rem;
+    }
+    .footer {
+        background-color: #114232;
+        color: #ffffff;
+        padding: 50px 0;
+        text-align: center;
+        overflow: hidden !important;
+    }
+    .footer p {
+        margin-bottom: 0;
+    }
+    @media screen and (max-width: 768px) {
+        
+        .cta h2 {
+                        font-size: 2rem;
+           
+        }
+        .cta p {
+            font-size: 1rem;
+           
+        }
+        .about-us {
+          margin-top: -10% !important;
+        }
+        .contact-real{
+            display: block;
+            height: 80vh;
+            width:auto;
+                   background:none;
+            overflow: hidden !important;
+        }
+        .contact-form {
+       
+            max-width: 400px;
+            width: 250%;
+            margin-left: 5%;
+            margin-bottom: 4%;
+            animation: fadeIn 1s ease;
+            margin-bottom: 4%;
+            animation: fadeIn 1s ease;
+          }
+          .jumbotron h1 {
+            font-weight: bolder;
+            font-size: 2.5rem;
+            
+        }
+        .jumbotron p {
+            font-size: 1em;
+        }
+
+        .navbar{
+            margin-top: 20px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
