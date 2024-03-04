@@ -6,7 +6,7 @@
     
     .bg-deal{
         background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.808)),
-        url( '/assets/chocolate.jpg');
+        url( './assets/chocolate.jpg');
         background-size: cover;
         background-position:center;
         background-repeat:no-repeat;
